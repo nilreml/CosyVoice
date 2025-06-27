@@ -44,5 +44,9 @@ dependencies = [
 ]
 
 [tool.uv]
-package = false
+package = true
 override-dependencies = ["pynini>=2.1.6.post1"]
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
