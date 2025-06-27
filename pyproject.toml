@@ -1,0 +1,48 @@
+[project]
+name = "cosyvoice"
+version = "0.0.1"
+requires-python = ">=3.10"
+dependencies = [
+    "conformer",
+    "deepspeed ; sys_platform == 'linux'",
+    "diffusers",
+    "fastapi",
+    "fastapi-cli",
+    "gdown",
+    "gradio",
+    "grpcio",
+    "grpcio-tools",
+    "hydra-core",
+    "hyperpyyaml",
+    "inflect",
+    "librosa",
+    "lightning",
+    "matplotlib",
+    "modelscope",
+    "networkx",
+    "omegaconf",
+    "onnx",
+    "onnxruntime-gpu ; sys_platform == 'linux'",
+    "onnxruntime ; sys_platform == 'darwin' or sys_platform == 'win32'",
+    "openai-whisper",
+    "protobuf",
+    "pyarrow",
+    "pydantic",
+    "pyworld",
+    "rich",
+    "soundfile",
+    "tensorboard",
+    "tensorrt-cu12 ; sys_platform == 'linux'",
+    "tensorrt-cu12-bindings ; sys_platform == 'linux'",
+    "tensorrt-cu12-libs ; sys_platform == 'linux'",
+    "torch",
+    "torchaudio",
+    "transformers",
+    "uvicorn",
+    "wetextprocessing",
+    "wget",
+]
+
+[tool.uv]
+package = false
+override-dependencies = ["pynini>=2.1.6.post1"]
