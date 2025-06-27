@@ -489,7 +489,7 @@ wheels = [
 [[package]]
 name = "cosyvoice"
 version = "0.0.1"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "conformer" },
     { name = "deepspeed", marker = "sys_platform == 'linux'" },
